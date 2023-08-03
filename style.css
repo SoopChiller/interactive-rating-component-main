@@ -32,8 +32,8 @@ body {
 
 .icon-star {
     background: hsla(196, 11%, 52%, 0.1);
-    height: 16px;
-    width: 16px;
+    height: 17px;
+    width: 17px;
     padding: 16px;
     border-radius: 24px;
 }
@@ -42,7 +42,7 @@ body {
     font-size: 29px;
     font-weight: bold;
     color: hsl(0, 0%, 100%);
-    
+    margin-bottom: 12px;
 }
 
 .feedback {
@@ -59,6 +59,7 @@ body {
 }
 
 .rating-button {
+    font-weight: bold;
     height: 50px;
     width: 50px;
     border-radius: 25px;
