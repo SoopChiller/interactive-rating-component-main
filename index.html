@@ -5,42 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <!-- Rating state start -->
+    <div class="rating-state show">
+      <div id="rating-state-container">
 
-  <!-- Rating state start -->
+        <div class="icon-star-container">
+          <img class="icon-star" src="images/icon-star.svg" alt="">
+        </div>  
+        <header class="question">How did we do?</header>
 
-  How did we do?
+        <p class="feedback">Please let us know how we did with your support <br> request. All feedback is appreciated 
+          to help us <br> improve our offering!</p>
+    
+        <div class="rating-button-container">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+          <button class="rating-button" onclick="
+            score = 1;
+            console.log(score);
+          ">1</button>
 
-  1 2 3 4 5
+          <button class="rating-button" onclick="
+            score = 2;
+            console.log(score);
+          ">2</button>
 
-  Submit
+          <button class="rating-button" onclick="
+            score = 3;
+            console.log(score);
+          ">3</button>
 
-  <!-- Rating state end -->
+          <button class="rating-button" onclick="
+            score = 4;
+            console.log(score);
+          ">4</button>
 
-  <!-- Thank you state start -->
+          <button class="rating-button" onclick="
+            score = 5;
+            console.log(score);
+          ">5</button>
+          
+        </div>
 
-  You selected <!-- Add rating here --> out of 5
+        <button id="submit-button" onclick="
+          hide();
+        ">SUBMIT</button>
+      </div>
 
-  Thank you!
+      <div id="thank-you-state-container">
+        
+        <img id="graphic" src="images/illustration-thank-you.svg" alt="">
+        
+        <p id="rating-display">You selected  <span id="number"></span> out of 5</p>  
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+        <header id="thanks">Thank you!</header>
 
-  <!-- Thank you state end -->
+        <p id="support">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don't hesitate to <br> get in touch!</p>  
 
+        <!-- Thank you state end -->
+
+      </div>
+    </div>
+
+
+    
+  </main>
   
   
-</body>
+</body>  
 </html>
